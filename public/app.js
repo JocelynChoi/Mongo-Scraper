@@ -60,9 +60,7 @@ $(document).on("click", "#savenote", function() {
     });
 
   // Also, remove the values entered in the input and textarea for note entry
-    $(document).on("click", "#delnote", function() {
-    // Grab the id associated with the article from the submit button
-    thisId = $(this).attr("data-id");
+   
   $("#titleinput").val("");
   $("#bodyinput").val("");
 });
