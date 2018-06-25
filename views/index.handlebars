@@ -1,0 +1,17 @@
+<div id="wrapper">
+  <h1>Mongo Scraper</h1>
+  <h2><i></i></h2>
+  <div id="articles">
+    {{#each articles}}
+      <article>
+        <h1 data-id="{{_id}}"><span class="article-title">{{title}}</span> <a href="#" class="article-delete">Delete</a></h1>
+        <a href="{{link}}" target="_blank">Article Link</a>
+      </article>
+    {{/each}}
+  </div>
+  <div id="notes"></div>
+  <button data-id="{{_id}}" 
+      class="delnote">Delete Note</button>
+</div>
+
+{{!-- <script src="/app.js"></script> --}}
